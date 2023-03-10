@@ -2,21 +2,17 @@
   "name": "express-ts",
   "version": "1.0.0",
   "description": "Express TypeScript Starter",
-  "main": "dist/app.js",
+  "main": "dist/server.js",
+  "author": {
+    "name": "xclss99",
+    "email": "xuslf@foxmail.com"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec",
     "prod": "npm run build && cross-env NODE_ENV=production node dist/server.js",
     "build": "tsc && tsc-alias",
     "lint": "eslint . --ext .js,.cjs,.ts --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix"
-  },
-  "keywords": [
-    "express",
-    "typescript"
-  ],
-  "author": {
-    "name": "xclss99",
-    "email": "xuslf@foxmail.com"
   },
   "license": "MIT",
   "dependencies": {
